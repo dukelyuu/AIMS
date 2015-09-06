@@ -41,3 +41,17 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/Smart.AIMS.Application/bin
+/Smart.AIMS.Common/obj
+/Smart.AIMS.Application/obj
+/Smart.AIMS.Core/obj
+/Smart.AIMS.Desktop/obj
+/Smart.AIMS.Desktop/bin
+/Smart.AIMS.Core/bin
+bin
+obj
+obj
+bin
+obj
+bin
+obj
