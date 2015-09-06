@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D3DEA899-9925-4DB4-8AAA-147B579FC30E}</ProjectGuid>
+    <ProjectGuid>{9404733B-32CD-4B2C-B99A-001909BD66E7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Smart.AIMS.Common</RootNamespace>

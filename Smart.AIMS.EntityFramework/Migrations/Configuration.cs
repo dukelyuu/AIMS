@@ -1,4 +1,6 @@
 using System.Data.Entity.Migrations;
+using Smart.AIMS.Migrations.SeedData;
+using EntityFramework.DynamicFilters;
 
 namespace Smart.AIMS.Migrations
 {
@@ -12,8 +14,8 @@ namespace Smart.AIMS.Migrations
 
         protected override void Seed(AIMS.EntityFramework.AIMSDbContext context)
         {
-            // This method will be called every time after migrating to the latest version.
-            // You can add any seed data here...
+            context.DisableAllFilters();
+            new InitialDataBuilder(context).Build();
         }
     }
 }

@@ -4,7 +4,6 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Abp.Localization;
-using Abp.Localization.Sources;
 using Abp.Localization.Sources.Xml;
 using Abp.Modules;
 
@@ -22,11 +21,9 @@ namespace Smart.AIMS.Web
 
             //Add/remove localization sources here
             Configuration.Localization.Sources.Add(
-                new DictionaryBasedLocalizationSource(
+                new XmlLocalizationSource(
                     AIMSConsts.LocalizationSourceName,
-                    new XmlFileLocalizationDictionaryProvider(
-                        HttpContext.Current.Server.MapPath("~/Localization/AIMS")
-                        )
+                    HttpContext.Current.Server.MapPath("~/Localization/AIMS")
                     )
                 );
 

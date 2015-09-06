@@ -1,8 +1,12 @@
-﻿using Abp.EntityFramework;
+﻿using System.Data.Common;
+using Abp.Zero.EntityFramework;
+using Smart.AIMS.Authorization.Roles;
+using Smart.AIMS.MultiTenancy;
+using Smart.AIMS.Users;
 
 namespace Smart.AIMS.EntityFramework
 {
-    public class AIMSDbContext : AbpDbContext
+    public class AIMSDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
         //TODO: Define an IDbSet for each Entity...
 
@@ -26,6 +30,13 @@ namespace Smart.AIMS.EntityFramework
          */
         public AIMSDbContext(string nameOrConnectionString)
             : base(nameOrConnectionString)
+        {
+
+        }
+
+        //This constructor is used in tests
+        public AIMSDbContext(DbConnection connection)
+            : base(connection, true)
         {
 
         }
