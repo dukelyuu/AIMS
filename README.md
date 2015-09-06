@@ -31,3 +31,5 @@ Initial Commit
 1. 在VS2013底部的“程序包管理器控制台”窗口中，选择默认项目并执行命令“Add-Migration InitialCreate”
 2. 在“程序包管理器控制台”执行“Update-Database”，会自动在数据库创建相应的数据表
 3. 修改了实体，可以再次执行Add-Migration和Update-Database，就能很轻松的让数据库结构与实体类的同步
+
+6、集成了zero权限模块
