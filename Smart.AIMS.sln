@@ -44,6 +44,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6、AIMS.Common", "6、AIMS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart.AIMS.Common", "Smart.AIMS.Common\Smart.AIMS.Common.csproj", "{D3DEA899-9925-4DB4-8AAA-147B579FC30E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7、AIMS.Docs", "7、AIMS.Docs", "{057C6167-2CF2-420C-9F64-FA55CF5300B6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
